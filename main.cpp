@@ -40,20 +40,15 @@ int main(int argc, char **argv) {
       .doNotOptimizeAway(s_fmt_vec);
 
   std::cout << "\n"
-            << "snprintf:\n"
-            << s_snprintf << "\n"
-            << "sstream: \n"
-            << s_sstream << "\n"
-            << "tinyformat: \n"
-            << s_tinyformat << "\n"
-            << "fmt: \n"
-            << s_fmt << "\n"
-            << "sstream_vec: \n"
-            << s_sstream_vec << "\n"
-            << "tinyformat_vec: \n"
-            << s_tinyformat_vec << "\n"
-            << "fmt_vec: \n"
-            << s_fmt_vec << "\n";
+            << "|    test|    output\n"
+            << "|-------:|---------\n"
+            << "| snprintf | " << s_snprintf << "\n"
+            << "| sstream | " << s_sstream << "\n"
+            << "| tinyformat | " << s_tinyformat << "\n"
+            << "| fmt | " << s_fmt << "\n"
+            << "| sstream_vec | " << s_sstream_vec << "\n"
+            << "| tinyformat_vec | " << s_tinyformat_vec << "\n"
+            << "| fmt_vec | " << s_fmt_vec << "\n";
 
   return 0;
 }
