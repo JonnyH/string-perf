@@ -39,7 +39,8 @@ int main(int argc, char **argv) {
       .run("fmt_vec", [&] { s_fmt_vec = bench_fmt_vec(prefix, vec); })
       .doNotOptimizeAway(s_fmt_vec);
 
-  std::cout << "snprintf:\n"
+  std::cout << "\n"
+            << "snprintf:\n"
             << s_snprintf << "\n"
             << "sstream: \n"
             << s_sstream << "\n"
